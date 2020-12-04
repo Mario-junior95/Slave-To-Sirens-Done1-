@@ -51,10 +51,11 @@ useEffect(() => {
                }
             })}
             </Carousel>
-            <div className ="imagecontainer-news">
+          
+            <div className = "gallery">
             {listItems.slice(0).reverse().map((val) =>{
-              return <div key = {val._id}>
-                <img className = "imageNews "src={`http://localhost:3001/${val.image}`} alt="bandImage"/>
+              return <div key = {val._id}  className ="images">
+                <img className = "image_Size "src={`http://localhost:3001/${val.image}`} alt="bandImage"/>
               </div>
             })} 
             </div>

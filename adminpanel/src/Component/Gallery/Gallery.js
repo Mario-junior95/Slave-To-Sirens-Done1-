@@ -57,6 +57,7 @@ function Gallery() {
             <Navigation/>
             <div className = "section section_raduis">
                 <h1>Upload New Image Under Carousel Section: </h1>
+                <h4>Make sure the size of your image is <br/> (800 * 533)</h4>
                 <input type="file"  onChange = {onChange} name = "Image"/><br/>
                 <button onClick={addItem}>
                    Upload

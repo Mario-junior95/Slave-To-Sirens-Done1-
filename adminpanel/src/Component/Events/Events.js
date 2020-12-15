@@ -10,6 +10,13 @@ function Events() {
     const [listItems , setListItems] = useState([]);
     const [newImages , setNewImages] = useState(null);
 
+    
+
+    useEffect(() => {
+        Axios.get('http://localhost:8000/todos').then((response) => {
+         console.log(response.data);
+        })
+    },[]);
 
 
     useEffect(() => {
